@@ -73,3 +73,69 @@ Aktualnie niezaimplementowane lub wymagające poprawy pozostają:
 * funkcjonalność szybkiego dodawania produktów do koszyka za pomocą ikon widocznych na liście produktów.
 
 Pomimo tych ograniczeń projekt spełniał wymagania pracy całorocznej i pozwolił mi zdobyć praktyczne doświadczenie w tworzeniu aplikacji webowych.
+
+
+## Uruchomienie projektu
+
+Aby uruchomić projekt lokalnie, wymagane jest środowisko umożliwiające obsługę PHP oraz MySQL, np. **XAMPP**.
+
+### 1. Skopiuj pliki projektu
+
+Pobierz lub sklonuj repozytorium, a następnie umieść folder `SwooshSpot` w katalogu serwera [WWW](http://WWW).
+
+Przykładowa lokalizacja dla XAMPP:
+
+```text
+C:\xampp\htdocs\SwooshSpot
+```
+
+### 2. Uruchom wymagane usługi
+
+W panelu sterowania XAMPP uruchom:
+
+* Apache,
+* MySQL.
+
+### 3. Utwórz bazę danych
+
+Za pomocą phpMyAdmin utwórz nową bazę danych o nazwie:
+
+```text
+swooshspotdata
+```
+
+### 4. Zaimportuj strukturę i dane bazy
+
+Do utworzonej bazy danych zaimportuj plik:
+
+```text
+swooshspotdata.sql
+```
+
+Plik znajduje się w repozytorium projektu.
+
+### 5. Skonfiguruj połączenie z bazą danych
+
+W razie potrzeby zaktualizuj dane połączenia z bazą danych w plikach konfiguracyjnych projektu, tak aby odpowiadały konfiguracji lokalnego środowiska.
+
+Domyślne dane dla XAMPP:
+
+```text
+Host: localhost
+Użytkownik: root
+Hasło:
+Baza danych: swooshspotdata
+```
+
+### 6. Uruchom aplikację
+
+Po wykonaniu powyższych kroków projekt powinien być dostępny pod adresem:
+
+```text
+http://localhost/SwooshSpot
+```
+
+## Uwagi
+
+Projekt został przygotowany w celach edukacyjnych jako praca całoroczna realizowana w technikum informatycznym. Nie był wdrażany w środowisku produkcyjnym, dlatego może wymagać dodatkowej konfiguracji w zależności od używanego środowiska lokalnego.
+
